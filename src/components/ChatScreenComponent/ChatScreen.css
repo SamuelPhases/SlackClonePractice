@@ -1,0 +1,148 @@
+.chatscreen {
+  background-color: #fff;
+  flex: 0.9;
+}
+
+.chatscreen--details {
+  background-color: #fff;
+  display: none;
+}
+
+.chatscreen--container {
+  display: flex;
+  flex: 0.9;
+  background-color: #fff;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.chatscreen--topic {
+  background-color: #fff;
+  padding: 1em 1em;
+  height: 10.5vh;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .chatscreen--topic--left */
+
+.chatscreen--body {
+  background-color: #fff;
+  position: sticky;
+  height: 65vh;
+  overflow: auto;
+}
+
+.chatscreen--input {
+  background-color: #ccc;
+  width: 95%;
+  margin: 0em auto;
+  border-radius: 5px;
+  position: sticky;
+  border: 1px solid #605f60;
+  height: 16vh;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.chatscreen--input.chat--resize {
+  height: 12vh;
+}
+
+.chatscreen--input--edit--right {
+  /* background-color: #127; */
+  position: fixed;
+  right: 2.5%;
+  bottom: 3%;
+  transition: all 0.3s ease;
+}
+
+.chat--resize .chatscreen--input--edit--right {
+  /* background-color: #281; */
+  bottom: 7%;
+}
+
+.chatscreen--input > textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  resize: none;
+  font-size: 0.85rem;
+  outline: none;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-family: inherit;
+  line-height: 2;
+  /* height: 400px; */
+  /* background-color: fuchsia; */
+}
+
+.chat--resize > textarea {
+  /* background-color: #478; */
+  height: 600px;
+  width: 80%;
+}
+
+.chat--resize > textarea::-webkit-scrollbar {
+  width: 0;
+}
+
+.chatscreen--input--edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.1em 0.5em;
+}
+
+.chatscreen--input--edit--right,
+.chatscreen--input--edit--left {
+  display: flex;
+  align-items: center;
+}
+
+.chatscreen--input--edit--left > p:hover {
+  background-color: #eee;
+}
+.chatscreen--input--edit--left > p {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0em 0.5em;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.list--edit > .MuiSvgIcon-root {
+  margin-top: 0.35em;
+  font-size: 1rem;
+}
+
+.chatscreen--input--edit--right > .hide--edit:hover,
+.chatscreen--input--edit--right > .attach--edit:hover,
+.chatscreen--input--edit--right > .email--edit:hover {
+  background-color: #eee;
+}
+.chatscreen--input--edit--right > div {
+  margin-right: 1em;
+  cursor: pointer;
+  padding: 0.1em 0.5em;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.chatscreen--input--edit--right > div > .MuiSvgIcon-root {
+  margin-top: 0.3em;
+  font-size: 1rem;
+}
+
+.send--btn {
+  background-color: #007a5a;
+}
+.send--btn:hover {
+  color: white;
+  background-color: rgb(26, 190, 26);
+}
+.send--btn > .MuiSvgIcon-root {
+  background-color: transparent;
+  color: #fff;
+}

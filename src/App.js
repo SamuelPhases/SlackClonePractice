@@ -1,25 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from "react";
+import "./App.css";
+import ChatScreen from "./components/ChatScreenComponent/ChatScreen";
+import Header from "./components/HeaderComponent/Header";
+import Sidebar from "./components/SidebarComponent/Sidebar";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import Reactions from "./pages/Reactions";
+import Threads from "./pages/Threads";
+import SavedItems from "./pages/SavedItems";
+import AllDms from "./pages/AllDms";
+import Login from "./components/LoginComponent/Login";
+import AddChannel from "./components/AddForm/AddChannel";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <Login/>
+    <>
+      
+    <Router>
+      <div className="app">
+        <Header />
+        <div className="app--body">
+          <Sidebar/>
+            <Switch>
+            <Route path="/chatscreen">
+              <ChatScreen />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path="/reactions">
+              <Reactions />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path="/threads">
+              <Threads />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path="/saveditems">
+              <SavedItems />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path="/alldms">
+              <AllDms />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
+  </>
   );
 }
 

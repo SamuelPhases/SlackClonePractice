@@ -1,0 +1,105 @@
+.reaction--tab--split {
+  display: flex;
+  flex: 0.9;
+}
+
+.reaction--chatscreen {
+  flex: 0.6;
+  transition: all 0.3s ease;
+}
+.reaction {
+  transition: all 0.3s ease;
+  flex: 0.4;
+}
+
+.close--reaction {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.fullscreen--reaction {
+  flex: 1;
+  /* background-color: #110; */
+}
+.fullscreen--chatscreen--reaction {
+}
+
+.hide--reaction--split {
+}
+.hide--chatscreen {
+  /* flex: 0.6; */
+  display: none;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.hide--reaction--fullscreen {
+  display: none;
+}
+
+.close--chat--screen--reaction {
+  background-color: #988;
+  flex: 1;
+}
+
+.reaction--content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reaction--header {
+  height: 10.5vh;
+  /* background-color: #294; */
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reaction--header > h3 {
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+
+.reaction--header > div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.reaction--header > div > div > .MuiSvgIcon-root {
+  font-size: 1.2rem;
+}
+
+.reaction--header > div > div > .MuiSvgIcon-root:hover {
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.reaction--body {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  /* background-color: #950; */
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #1d1c1d;
+}
+.reaction--body > .MuiSvgIcon-root {
+  color: #de4e2b;
+}
+
+.reaction--body > h3 {
+  margin: 0.5em 0em;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.reaction--body > p {
+  font-size: 0.95rem;
+  width: 80%;
+}

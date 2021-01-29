@@ -1,0 +1,250 @@
+.header {
+  background-color: #350d36;
+  color: #ccc;
+  padding: 0.5em 1em;
+}
+
+.header--content {
+  width: 72%;
+  /* background-color: #181; */
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header--content--center--history > .MuiSvgIcon-root,
+.header--content--center--help > .MuiSvgIcon-root {
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+.header--content--center--history:hover,
+.header--content--center--help:hover {
+  background-color: #684a6890;
+}
+.header--content--center--history,
+.header--content--center--help {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  background-color: #350d3690;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header--content--center--search > p {
+  font-size: 0.9rem;
+  padding: 0em 0.5em;
+  background-color: #431e44;
+}
+.header--content--center--search {
+  width: 500px;
+  /* padding: 0.1em 0.1em; */
+  transition: all 0.3s ease;
+  border: 1px solid #684a68;
+  border-radius: 2px;
+  margin: 0em 0.5em;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.header--content--center,
+.header--content--right {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header--content--right {
+  cursor: pointer;
+  /* position: relative; */
+}
+
+.header--content--profile,
+.header--content--online {
+  position: absolute;
+  right: 0%;
+  bottom: -30%;
+}
+
+.header--content--profile > .MuiSvgIcon-root {
+  font-size: 2rem;
+  color: #e8912d;
+}
+
+.header--content--online > .MuiSvgIcon-root {
+  font-size: 1rem;
+  color: rgb(48, 216, 48);
+}
+
+.header--content--online {
+  bottom: -30%;
+  right: -0.5%;
+  background-color: #350d36;
+  border-radius: 50%;
+}
+
+.profile--toggle {
+  background-color: #fff;
+  top: 120%;
+  position: absolute;
+  right: 1%;
+  /* padding: 1em; */
+  width: 300px;
+  z-index: 1;
+  /* color: #fff; */
+  cursor: auto;
+  padding-bottom: 0.3em;
+  border-radius: 5px;
+  color: #1d1c1d;
+}
+
+.profile--toggle--header {
+  display: flex;
+  align-items: center;
+  /* background-color: #019; */
+  padding: 1em;
+}
+
+.profile--toggle--header > .MuiSvgIcon-root {
+  font-size: 3rem;
+  margin-right: 0.1em;
+}
+
+.profile--toggle--id > h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profile--toggle--away--active {
+  display: flex;
+  align-items: center;
+}
+
+.profile--toggle--away--active > .MuiSvgIcon-root {
+  font-size: 0.8rem;
+  color: green;
+  margin-top: 0.2em;
+}
+
+.profile--toggle--away--active > p {
+  padding-left: 0.2em;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+.profile--toggle--status:hover.profile--toggle--status > .MuiSvgIcon-root {
+  color: #e89127;
+}
+.profile--toggle--status:hover.profile--toggle--status > p {
+  color: #000;
+}
+.profile--toggle--status:hover {
+  border-color: #222;
+  background-color: #ffffff10;
+}
+.profile--toggle--status {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 83%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: auto;
+  padding: 0.4em 0.4em;
+  border: 1px solid #8d8d8d;
+  border-radius: 5px;
+  color: #8d8d8d;
+}
+
+.profile--toggle--status > .MuiSvgIcon-root {
+  font-size: 1.4rem;
+  margin-right: 0.2em;
+}
+
+.profile--toggle--status > p {
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.switch--active {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 1.5em;
+  font-size: 0.95rem;
+
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.profile--edit {
+  border-top: 1px solid #000;
+  padding-top: 0.5em;
+}
+
+.edit--profile {
+  /* background-color: #109766; */
+  display: flex;
+  align-items: center;
+  padding: 0.3em 1.5em;
+
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.edit--profile > .MuiSvgIcon-root {
+  font-size: 1rem;
+  margin-right: 0.3em;
+}
+
+.edit--profile > p,
+.view--profile > p {
+  font-size: 0.95rem;
+}
+
+.view--profile {
+  /* background-color: #109766; */
+  display: flex;
+  align-items: center;
+  padding: 0.4em 1.7em;
+
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.preference {
+  padding: 0.4em 1.7em;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.sign--out {
+  position: relative;
+}
+
+.split--sign--out {
+  width: 100%;
+  height: 1px;
+  margin: 0.5em 0em;
+  margin-bottom: 0.2em;
+  background-color: #478;
+}
+.sign--out > p {
+  padding: 0.5em 1.7em;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.sign--out > p:hover,
+.preference:hover,
+.view--profile:hover,
+.edit--profile:hover,
+.switch--active:hover {
+  background-color: #1164a3;
+  color: #fff;
+}

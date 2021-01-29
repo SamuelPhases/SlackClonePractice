@@ -1,0 +1,145 @@
+.chatscreen--topic--right {
+  display: flex;
+  align-items: center;
+  color: #222;
+}
+
+.chatscreen--topic--left--top > h4 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-right: 0.3em;
+  cursor: pointer;
+}
+.chatscreen--star > .MuiSvgIcon-root:hover {
+  background-color: #ccc;
+}
+.chatscreen--star > .MuiSvgIcon-root {
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-top: 0.4em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatscreen--topic--left--top,
+.chatscreen--topic--left--bottom {
+  color: #222;
+  display: flex;
+  align-items: center;
+}
+.chatscreen--topic--left--bottom > .pinned--text {
+  display: flex;
+  align-items: center;
+}
+
+.pinned--text::after {
+  content: "";
+  position: absolute;
+  right: -30%;
+  top: 0;
+  width: 1%;
+  height: 100%;
+  background-color: #cee;
+}
+.pinned--text {
+  margin-right: 1em;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pinned--text:hover {
+  color: rgb(68, 68, 255);
+}
+.chatscreen--topic--left--bottom > h4:hover {
+  color: rgb(68, 68, 255);
+}
+.chatscreen--topic--left--bottom > h4 {
+  transition: all 0.3s ease;
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.pinned--text > .MuiSvgIcon-root {
+  font-size: 1rem;
+  margin-top: 0.1em;
+}
+.chatscreen--topic > h4 {
+  /* font-size: 1.2rem; */
+}
+
+.chatscreen--topic--right > .list--chat--persons > div:nth-child(3),
+.chatscreen--topic--right > .list--chat--persons > div:nth-child(2) {
+  margin-left: -0.7em;
+}
+.chatscreen--topic--right > .list--chat--persons > div > .MuiSvgIcon-root {
+}
+
+.list--chat--persons:hover p {
+  background-color: #ccc;
+}
+.chatscreen--topic--right > .list--chat--persons > p {
+  /* font-size: 1.3rem; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 0.1em;
+  margin-left: -0.19em;
+  font-weight: 500;
+  padding: 0em 0.5em;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.chatscreen--topic--right
+  > .list--chat--persons
+  > div:nth-child(2)
+  > .MuiSvgIcon-root {
+  color: #928;
+  z-index: 2;
+}
+
+.list--chat--persons {
+  cursor: pointer;
+}
+.chatscreen--topic--right
+  > .list--chat--persons
+  > div:nth-child(3)
+  > .MuiSvgIcon-root {
+  color: #7f7ffa;
+  z-index: 3;
+}
+.chatscreen--topic--right > .list--chat--persons {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5em;
+}
+
+.profile--invite:hover,
+.info:hover {
+  background-color: #ccc;
+}
+
+.profile--invite {
+  cursor: pointer;
+  margin-right: 1em;
+  transform: rotateY(180deg);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.info {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  /* background-color: #ccc; */
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

@@ -1,0 +1,83 @@
+.all--dms {
+  background-color: #fff;
+  flex: 0.9;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.all--dmsHeader {
+  /* background-color: #019839; */
+  color: #1d1c1d;
+}
+.all--dmsHeader > div {
+  display: flex;
+  align-items: center;
+  height: 10.5vh;
+  padding: 1em;
+  border-bottom: 1px solid #e1e1e1;
+}
+.all--dmsHeader > div > h3 {
+  /* background-color: #091 ; */
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.all--dmsHeader > div:last-child {
+  color: #1d1c1d;
+  /* background-color: lavenderblush; */
+  height: 8vh;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.all--dmsHeader > div > p {
+  /* margin-right: 0.3em; */
+  font-size: 0.95rem;
+  /* flex: 0.05; */
+  color: #1d1c1db3;
+}
+.all--dmsHeader > div > input {
+  flex: 1;
+  /* background-color: #109288; */
+  padding: 0.7em 1em;
+  font-size: 0.95rem;
+  outline: none;
+  border: none;
+  color: #1d1c1d;
+  background-color: transparent;
+}
+
+.all--dmsBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* flex: auto; */
+  /* background-color: #849877; */
+  color: #1d1c1d;
+  padding-top: 5em;
+}
+.all--dmsBody > div {
+  display: flex;
+  align-items: center;
+}
+.all--dmsBody > div > h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.all--dmsBody > div > .MuiSvgIcon-root {
+  color: rgb(243, 243, 64);
+  margin-right: 0.3em;
+  font-size: 1.2rem;
+}
+
+.all--dmsBody > p {
+  width: 55%;
+  font-size: 1.1rem;
+  margin-top: 0.5em;
+  line-height: 1.5;
+  text-align: center;
+  color: #1d1c1db3;
+}

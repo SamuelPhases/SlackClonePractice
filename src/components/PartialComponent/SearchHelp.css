@@ -1,0 +1,43 @@
+.search--help--container {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: #00000090;
+  z-index: 2;
+}
+
+.search--help {
+  width: 18%;
+  left: 52%;
+  top: 6%;
+  background-color: #f8f8f8;
+  position: absolute;
+  padding: 1em 0em;
+  border-radius: 8px;
+}
+
+.search--help > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search--help > p,
+.search--help > div {
+  padding: 0.5em;
+  transition: all 0.3s ease;
+  color: #1d1c1d;
+  cursor: pointer;
+}
+
+.search--help > div > .MuiSvgIcon-root {
+  font-size: 1rem;
+}
+
+.search--help > p:hover,
+.search--help > div:hover {
+  background-color: #1264a3;
+  color: #fff;
+}

@@ -1,0 +1,24 @@
+.sidebarhover:hover {
+  background-color: rgb(132, 132, 184);
+  color: #fff;
+}
+.sidebarhover {
+  display: flex;
+  align-items: center;
+  /* margin: 0.3em 0em; */
+  color: #595959;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5em;
+}
+
+.sidebarhover > h5 {
+  padding-left: 0.3em;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.sidebarhover > .MuiSvgIcon-root {
+  font-size: 0.9rem;
+}

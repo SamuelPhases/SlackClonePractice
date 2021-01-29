@@ -1,0 +1,58 @@
+.threads {
+  flex: 0.9;
+  /* background-color: #110008; */
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.threads--header {
+  height: 10.5vh;
+  /* background-color: #019938; */
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e1e1e1;
+  color: #1d1c1d;
+}
+
+.threads--header > h3 {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.threads--content {
+  /* background-color: #101987; */
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #1d1c1d;
+}
+
+.threads--content > .MuiSvgIcon-root {
+  font-size: 2rem;
+  color: #429e73;
+}
+
+.threads--content > h4 {
+  margin: 1em 0em;
+  margin-bottom: 0.5em;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.threads--content > p {
+  margin-bottom: 0.5em;
+  font-size: 0.93rem;
+  font-weight: 400;
+}
+
+/* 532753 */
+
+.threads--content > p:last-child {
+  color: #1264a3;
+  cursor: pointer;
+}

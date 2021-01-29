@@ -1,0 +1,40 @@
+.click--toggler--topic {
+  display: flex;
+  align-items: center;
+  margin: 0.2em 0em;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.click--toggler--topic > h5 {
+  padding-left: 0.3em;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.click--toggler--topic > div {
+  width: 1rem;
+  height: 1rem;
+  /* background-color: #201998; */
+}
+.click--toggler--topic > div > .MuiSvgIcon-root {
+  font-size: 1rem;
+}
+
+.show--topic--on--click {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: #dbdbdb;
+}

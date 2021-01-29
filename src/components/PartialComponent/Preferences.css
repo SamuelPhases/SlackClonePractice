@@ -1,0 +1,312 @@
+.preference--container {
+  background-color: #00000050;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preference--content {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 55%;
+  height: 90%;
+  margin: auto;
+  /* padding: 0.5em 2em; */
+  animation: containerAnim 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes containerAnim {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.preference--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2em 2em;
+  border-bottom: 1px solid #e1e1e1;
+  /* background-color: #100; */
+}
+
+.preference--header > h2 {
+  font-size: 1.5rem;
+  color: #1d1c1d;
+}
+
+.preference--header > .close--icon > .MuiSvgIcon-root {
+  color: #606060;
+}
+
+.preference--body {
+  display: flex;
+  /* background-color: #10110090; */
+  padding: 1.2em;
+}
+
+.preference--body--left {
+  /* background-color: #182; */
+  flex: 0.3;
+  margin-right: 2em;
+}
+
+.preference--body--left ul {
+  list-style: none;
+}
+
+.preference--body--left ul li:hover {
+  background-color: #eee;
+}
+.preference--body--left ul li {
+  text-transform: capitalize;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  transition: all 0.3s ease;
+  color: #1d1c1d;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.preference--body--right {
+  flex: 0.6;
+  /* background-color: #110977; */
+}
+
+.preference--body--right > h4 {
+  padding: 0.5em 0em;
+  color: #1d1c1d;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.preference--body--right > div {
+  margin-bottom: 0.8em;
+}
+.preference--body--right > div > label {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  cursor: pointer;
+}
+
+.preference--body--right > div > label > input {
+  margin-right: 0.8em;
+  height: 1rem;
+  width: 1rem;
+}
+
+.preference--body--right > div > label > .MuiSvgIcon-root {
+  font-size: 1.3rem;
+  margin-right: 0.2em;
+}
+
+.preference--body--right > div > label > span {
+  font-size: 0.95rem;
+}
+
+li.focus-class {
+  background-color: #1264a3;
+  color: #fff !important;
+}
+li.focus-class:hover {
+  background-color: #1264a3;
+  color: #fff !important;
+}
+
+.theme--header {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.light--theme--toggler {
+  /* background-color: #109756; */
+  border-radius: 5px;
+  border: 1px solid #1c99cf;
+  overflow: hidden;
+}
+
+.light--theme--toggler > .row1 {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  color: #1d1c1d;
+}
+
+.light--theme--toggler > .row1 > .MuiSvgIcon-root {
+  font-size: 3rem;
+}
+
+.light--theme--toggler > .row1 > div > div {
+  display: flex;
+  align-items: flex-end;
+}
+
+.light--theme--toggler > .row1 > div > div > h3 {
+  margin-right: 0.3em;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1d1c1d;
+}
+
+.light--theme--toggler > .row1 > div > div > p {
+  font-size: 0.8rem;
+  margin-bottom: 0.05em;
+}
+
+.light--theme--toggler > .row1 > div > p {
+  font-size: 0.9rem;
+}
+.light--theme--toggler > .row2 {
+  background-color: #e3f3fa;
+  padding: 1em;
+}
+
+.light--theme--toggler > .row2 > label > input {
+  margin-right: 1em;
+}
+
+.light--theme--toggler > .row2 > label > span {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+.dark--theme--toggler {
+  /* background-color: #109756; */
+  border-radius: 5px;
+  border: 1px solid #d7d7d7;
+  overflow: hidden;
+}
+
+.dark--theme--toggler > .row1 {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background-color: #1d1c1d;
+  color: #fff;
+}
+
+.dark--theme--toggler > .row1 > .MuiSvgIcon-root {
+  font-size: 3rem;
+}
+
+.dark--theme--toggler > .row1 > div > div {
+  display: flex;
+  align-items: flex-end;
+}
+
+.dark--theme--toggler > .row1 > div > div > h3 {
+  margin-right: 0.3em;
+  font-size: 1rem;
+  font-weight: 500;
+  /* color: #1d1c1d; */
+}
+
+.dark--theme--toggler > .row1 > div > div > p {
+  font-size: 0.8rem;
+  margin-bottom: 0.05em;
+}
+
+.dark--theme--toggler > .row1 > div > p {
+  font-size: 0.9rem;
+}
+.dark--theme--toggler > .row2 {
+  background-color: #e3f3fa;
+  padding: 1em;
+}
+
+.dark--theme--toggler > .row2 > label > input {
+  margin-right: 1em;
+}
+
+.dark--theme--toggler > .row2 > label > span {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.file--header {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1d1c1d;
+  margin-top: 0.3em;
+}
+
+.text--toggler {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+.text--toggler > .MuiSvgIcon-root {
+  font-size: 1rem;
+  margin-right: 0.3em;
+  color: #0075ff;
+}
+
+.text--toggler > p {
+  font-size: 0.9rem;
+  color: #1d1c1d;
+  text-transform: capitalize;
+}
+
+.eg {
+  font-size: 0.8rem;
+  color: #1d1c1db3;
+}
+
+.example--row {
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+.name--toggler {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+.name--toggler > .MuiSvgIcon-root {
+  font-size: 1rem;
+  margin-right: 0.3em;
+  color: #0075ff;
+}
+
+.name--toggler > p {
+  font-size: 0.9rem;
+  color: #1d1c1d;
+  text-transform: capitalize;
+}
+
+.eg {
+  font-size: 0.8rem;
+  color: #1d1c1db3;
+}
+
+.example--row {
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
+.sub--name {
+  font-size: 0.9rem;
+}
+
+.sub--name > span {
+  color: #1264a3;
+  cursor: pointer;
+}

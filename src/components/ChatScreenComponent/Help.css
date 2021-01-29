@@ -1,0 +1,171 @@
+.help--container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+  z-index: 2;
+
+  animation: containerAnim 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes containerAnim {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.help--content {
+  background-color: #fff;
+  width: 40%;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 2em;
+  color: #1d1c1d;
+  overflow: auto;
+}
+
+.help--content--header {
+  padding: 1em;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .help--content--header > div>.MuiSvgIcon-root:hover  */
+.help--content--header > div > .MuiSvgIcon-root:hover {
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  /* color: #31b9db; */
+}
+.help--content--header > div {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.help--content--header > h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.help--content--search {
+  width: 90%;
+  margin: 1em auto;
+  display: flex;
+  /* background-color: green; */
+  align-items: center;
+  position: relative;
+  /* padding-left: 1em; */
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.help--content--search > .MuiSvgIcon-root {
+  position: absolute;
+  left: 2%;
+  color: #636364;
+  top: 22%;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+.help--content--search > input {
+  flex: 1;
+  /* z-index: 2; */
+  padding: 0.5em;
+  padding-left: 2.5em;
+  outline-color: #31b9db;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #868686;
+  /* outline: none; */
+  /* position: absolute; */
+  /* background-color: transparent; */
+}
+
+.help--content--QA {
+  /* background-color: #827; */
+  /* overflow: scroll; */
+  overflow: auto;
+  height: 320px;
+}
+
+.help--qa {
+  background-color: #fff;
+  padding: 1em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #ddd;
+}
+
+.help--qa--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  padding: 0.4em;
+}
+
+.help--qa--header > h4 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #31b9db;
+  text-decoration: underline;
+}
+
+.help--qa--header > .MuiSvgIcon-root {
+  color: #31b9db;
+  transition: all 0.5s ease;
+  font-size: 1.3rem;
+}
+
+.help--qa--body {
+  background-color: #000;
+  /* margin-top: 0.5em; */
+  color: #31b9db;
+  /* margin-bottom: 0.5em; */
+  padding: 0.5em;
+  animation: bodyAnim 0.3s linear forwards;
+}
+
+@keyframes bodyAnim {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: scale(0.5);
+    transform: translateY(50%);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.help--qa--body > p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.help--qa--header:hover {
+  background-color: #000;
+}
+
+.help--qa--header:hover.help--qa--header > h4 {
+  text-decoration: none;
+}

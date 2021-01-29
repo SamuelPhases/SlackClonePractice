@@ -1,0 +1,62 @@
+.channel--list > .channel--single--list:hover {
+  background-color: #4a194b;
+}
+
+.channel--list > .channel--single--list {
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  padding-left: 2em;
+  color: #fff;
+  margin-bottom: 0.1em;
+  transition: all 3s ease;
+}
+
+.channel--single--list > div > h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.channel--single--list > div {
+}
+
+.channel--single--list > div > h2 {
+  margin-right: 0.6em;
+  margin-top: 0.1em;
+  border-radius: 3px;
+  background-color: #532753;
+  font-size: 0.8rem;
+  padding: 0.1em 0.5em;
+  font-weight: 400;
+}
+
+.channel--single--list > div {
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 2rem;
+  height: 2rem; */
+  /* background-color: #287; */
+}
+.channel--single--list > div > p {
+  background-color: #532753;
+  padding: 0.1em 1em;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.show--channel--on--click .channel--arrow > .MuiSvgIcon-root {
+  transition: all 0.3s ease;
+}
+.show--channel--on--click .channel--arrow:hover > .MuiSvgIcon-root {
+  background-color: #6f2f70;
+  border-radius: 5px;
+}

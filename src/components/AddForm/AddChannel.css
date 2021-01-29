@@ -1,0 +1,47 @@
+.add-channel {
+  /* background-color: #448; */
+  /* transition: all 3s ease; */
+  animation: aCAnim 0.3s linear forwards;
+}
+
+@keyframes aCAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.add-channel > form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 1em auto;
+}
+
+.add-channel > form > input {
+  padding: 0.5em;
+  outline: none;
+  font-size: 0.9rem;
+  background-color: transparent;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.04), -1px -1px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  /* background-color: #fff; */
+  border: none;
+}
+
+.add-channel > form > button {
+  margin: 0.5em 0em;
+  margin-top: 1em;
+  padding: 0.4em;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: -1px -1px rgba(0, 0, 0, 0.4), 1px 1px rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+}

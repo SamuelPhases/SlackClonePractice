@@ -1,0 +1,137 @@
+.profile--view--container {
+  height: 100%;
+  width: 100%;
+  background-color: #00000090;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.profile--view--content {
+  background-color: #fff;
+  width: 30%;
+  margin-top: 0em;
+  /* padding-bottom: 1em; */
+  margin-left: auto;
+  /* padding: 0.5em  0em; */
+  position: relative;
+  /* border: 1px solid #e1e1e1; */
+}
+
+.profile--view--content::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #e1e1e1;
+}
+
+.profile--view--header {
+  display: flex;
+  /* background-color: #190; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.09em 1em;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.profile--view--body {
+  /* background-color: #019; */
+  padding: 1em;
+}
+
+.profile--view--display {
+  display: flex;
+  /* background-color: #022; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 2em; */
+}
+.profile--view--display > .MuiSvgIcon-root {
+  font-size: 11rem;
+  background-color: #e8912d;
+  border-radius: 5px;
+  margin-bottom: 0.1em;
+}
+
+.profile--view--display > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2em;
+}
+.profile--view--display > div > h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.profile--view--display > div .MuiSvgIcon-root {
+  font-size: 1rem;
+  color: green;
+  margin-left: 0.5em;
+  margin-top: 0.2em;
+}
+
+.profile--view--display > p {
+  font-size: 0.9rem;
+  margin-left: -0.8em;
+}
+
+.profile--view--icons {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.profile--view--icons > div > div {
+  background-color: #f6f6f6;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+/* #1d1c1d0a */
+.profile--view--icons > div > div > .MuiSvgIcon-root {
+  color: #1d1c1d;
+  font-size: 1.3rem;
+  margin-left: 0.2em;
+  /* margin-top: 0.3em; */
+}
+
+.profile--view--icons > div:hover.profile--view--icons > div > div {
+  background-color: #019;
+}
+.profile--view--icons > div {
+  margin-right: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.profile--view--icons > div > p {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.profile--view--info > div > p {
+  color: #1d1c1db3;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.profile--view--info > div:nth-child(4) > h3,
+.profile--view--info > div:nth-child(3) > h3 {
+  color: #1264a3;
+}
+.profile--view--info > div:nth-child(2) > h3 {
+  text-transform: uppercase;
+}
+.profile--view--info > div > h3 {
+  color: #1d1c1d;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.profile--view--info > div {
+  margin-bottom: 1em;
+}
+.profile--view--info {
+  margin-top: 2em;
+}

@@ -1,0 +1,98 @@
+.savedItems--tab--split {
+  display: flex;
+  flex: 0.9;
+  /* background-color: #019; */
+}
+
+.saved--Ichatscreen {
+  flex: 0.6;
+  transition: all 2s ease;
+}
+.savedI {
+  flex: 0.4;
+}
+
+.fullscreen--savedI,
+.fullscreen--chatscreen {
+  flex: 1;
+  transition: all 0.3s ease;
+}
+.close--saved--items {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.hidesaved--chatscreen {
+  display: none;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.savedI--Content {
+  transition: all 3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.savedI--Header {
+  height: 10.5vh;
+  /* background-color: #294; */
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1d1c1d;
+}
+
+.savedI--Header > h3 {
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+
+.savedI--Header > div {
+  cursor: pointer;
+}
+.savedI--Header > div > div > .MuiSvgIcon-root {
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  color: #1d1c1d;
+}
+
+.saved--icon--split {
+  display: flex;
+  align-items: center;
+}
+
+.saved--icon--split > div > .MuiSvgIcon-root:hover {
+  background-color: gray;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.savedI--Body {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  /* background-color: #950; */
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #1d1c1d;
+}
+.savedI--Body > .MuiSvgIcon-root {
+  color: #e01e5a;
+}
+
+.savedI--Body > h3 {
+  margin: 0.5em 0em;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.savedI--Body > p {
+  font-size: 0.95rem;
+  width: 80%;
+}

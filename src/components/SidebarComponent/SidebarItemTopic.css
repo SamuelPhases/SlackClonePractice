@@ -1,0 +1,25 @@
+.sidebaritemtopic:hover {
+  background-color: #4a194b;
+}
+.sidebaritemtopic {
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  margin: 0.3em 0em;
+  color: #fff;
+  cursor: pointer;
+  /* margin-top: 0.4em; */
+  padding: 0.3em;
+  padding-left: 1em;
+}
+
+.sidebaritemtopic > h5 {
+  padding-left: 0.3em;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.sidebaritemtopic > .MuiSvgIcon-root {
+  font-size: 1rem;
+}

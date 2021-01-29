@@ -1,0 +1,123 @@
+.login--container {
+  background-color: #eee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1d1c1d;
+  /* padding-top: 1em; */
+}
+
+.login--container > h2 {
+  font-size: 2rem;
+  margin: 1em 0em;
+  margin-top: 0em;
+}
+.login--content {
+  /* background-color: #f8a; */
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.google--login {
+  width: 100%;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0.7em 1em;
+  font-size: 1rem;
+  font-weight: 550;
+  color: #4285f4;
+  border: 2px solid #4285f4;
+  border-radius: 3px;
+}
+
+.login--content > p {
+  margin: 1em 0em;
+}
+
+.login--form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #1d1c1db3;
+}
+
+.login--form > input:active,
+.login--form > input:focus {
+  /* background-color: #929; */
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.3),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login--form > button,
+.login--form > input {
+  padding: 0.6em 1em;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.3),
+    2px 2px 5px rgba(0, 0, 0, 0.09);
+}
+
+.login--form > button {
+  border-radius: 3px;
+  background-color: #611f69;
+  color: #fff;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.login--form > label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.login--form > label > p {
+  font-size: 0.9rem;
+  padding-left: 0.5em;
+}
+
+.login--form > label > input {
+  margin-top: 0.2em;
+}
+
+.login--container > p {
+  width: 30%;
+  line-height: 1.5;
+  margin: 1em auto;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.login--footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.login--footer > p {
+  margin: 0em 0.5em;
+  font-size: 0.95rem;
+}
+.login--footer > p:last-child {
+  display: flex;
+  align-items: center;
+}
+.login--footer > p:last-child > .MuiSvgIcon-root {
+  font-size: 1rem;
+}
+
+.login--content > p {
+  font-size: 0.9rem;
+}
+
+.login--content > p > span {
+  color: #4285f4;
+  margin-left: 0.3em;
+  cursor: pointer;
+}
