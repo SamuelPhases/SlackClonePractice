@@ -10,9 +10,15 @@ import CloseIcon from "@material-ui/icons/Close";
 
 import "./ViewProfile.css";
 
-function ViewProfile({ activeAway, editFromViewProfile, closeViewProfile }) {
+function ViewProfile({ activeAway, editFromViewProfile, closeViewProfile, setShowViewProfile }) {
+
+  const closeProfileView = (e) => {
+    if(e.target.classList.contains('profile--view--container')) closeViewProfile()
+    // console.log(123)
+  }
+
   return (
-    <div className="profile--view--container">
+    <div className="profile--view--container" onClick={(e) => closeProfileView(e)}>
       <div className="profile--view--content">
         <div className="profile--view--header">
           <h3>Profile</h3>

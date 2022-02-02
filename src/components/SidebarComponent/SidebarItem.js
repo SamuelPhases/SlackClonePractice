@@ -32,7 +32,7 @@ function SidebarItem() {
         <Link to="/threads">
           <SidebarItemTopic Icon={InsertCommentRoundedIcon} topic={"Threads"} />
         </Link>
-        <Link to="/alldms">
+        <Link to="/all-dms">
           <SidebarItemTopic
             Icon={QuestionAnswerRoundedIcon}
             topic={"All Dm's"}
@@ -44,7 +44,7 @@ function SidebarItem() {
             topic={"mentions & reactions"}
           />
         </Link>
-        <Link to="/saveditems">
+        <Link to="/saved-items">
           <SidebarItemTopic Icon={BookmarkRoundedIcon} topic={"saved items"} />
         </Link>
         <div

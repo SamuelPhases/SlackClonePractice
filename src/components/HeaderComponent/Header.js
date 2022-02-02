@@ -14,6 +14,7 @@ import Preferences from "../PartialComponent/Preferences";
 import SearchBox from "../PartialComponent/SearchBox";
 import SearchHelp from "../PartialComponent/SearchHelp";
 import SearchHistory from "../PartialComponent/SearchHistory";
+import closeModal from "../../hooks/useCloseModal";
 
 function Header() {
   const [profileToggler, setProfileToggler] = useState(false);
@@ -24,6 +25,10 @@ function Header() {
   const [openSearch, setOpenSearch] = useState(false);
   const [helpSearch, setHelpSearch] = useState(false);
   const [searchHistory, setSearchHistory] = useState(false);
+  
+  const closeProfileToggler = (e) => {
+    if(e.target.classList.contains('profile-toggle')) setProfileToggler(false)
+  }
 
   return (
     <>
@@ -72,11 +77,11 @@ function Header() {
               )}
             </div>
             {profileToggler && (
-              <div className="profile--toggle">
+              <div className="profile--toggle" onClick={(e) => closeProfileToggler(e)}>
                 <div className="profile--toggle--header">
                   <AccountBoxIcon />
                   <div className="profile--toggle--id">
-                    <h4>Lorem Brian</h4>
+                    <h4>Lorem Bria</h4>
                     <div className="profile--toggle--away--active">
                       {!activeAway ? (
                         <>
@@ -151,6 +156,8 @@ function Header() {
           closeEdit={() => {
             setShowEditProfile(false);
           }}
+          showEditProfile={showEditProfile}
+          setShowEditProfile={setShowEditProfile}
         />
       )}
       {showViewProfile && (
@@ -163,6 +170,7 @@ function Header() {
           closeViewProfile={() => {
             setShowViewProfile(false);
           }}
+          setShowViewProfile={setShowViewProfile}
         />
       )}
       {showPeferences && (
@@ -178,7 +186,7 @@ function Header() {
       {openSearch && <SearchBox setOpenSearch={setOpenSearch} />}
       {helpSearch && <SearchHelp setHelpSearch={setHelpSearch}/>}
 
-      {searchHistory && <SearchHistory />}
+      {searchHistory && <SearchHistory setSearchHistory={setSearchHistory} />}
     </>
   );
 }

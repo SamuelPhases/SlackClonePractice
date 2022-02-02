@@ -5,8 +5,15 @@ import CloseIcon from "@material-ui/icons/Close";
 import EmojiObjectsIcon from "@material-ui/icons/EmojiObjects";
 
 function SearchBox({ setOpenSearch }) {
+
+  
+  const closeSearchBoxContainer = (e) => {
+    if(e.target.classList.contains('search--box--container')) setOpenSearch(false)
+  }  
+
+
   return (
-    <div className="search--box--container">
+    <div className="search--box--container" onClick={(e) => closeSearchBoxContainer(e)}>
       <div className="search--box">
         <div className="search--box--header">
           <div>

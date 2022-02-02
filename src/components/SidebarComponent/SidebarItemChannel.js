@@ -1,24 +1,30 @@
 import React, { useState } from "react";
-import "./SidebarItemChannel.css";
-
 import ArrowDropDownRoundedIcon from "@material-ui/icons/ArrowDropDownRounded";
 import ArrowRightRoundedIcon from "@material-ui/icons/ArrowRightRounded";
 import AddRoundedIcon from "@material-ui/icons/AddRounded";
+import RemoveRoundedIcon from '@material-ui/icons/RemoveRounded';
+
+
+import "./SidebarItemChannel.css";
 import ChannelSingleList from "./ChannelSingleList";
 import AddChannel from "../AddForm/AddChannel";
 
 function SidebarItemChannel({showAddChannel}) {
   const [openChannelList, setOpenChannelList] = useState(true);
   const [addChannel,setAddChannel]=useState(false)
+
+  const toggleChannelList = (e) => {
+    e.stopPropagation();
+    setOpenChannelList(!openChannelList);
+  }
+
   return (
   <>
 
     <div className="sidebaritemchannel">
       <div
         className="show--channel--on--click"
-        onClick={() => {
-          setOpenChannelList(!openChannelList);
-        }}
+        onClick={(e) => toggleChannelList(e)}
       >
         <div>
           <div className="channel--arrow">
@@ -30,8 +36,8 @@ function SidebarItemChannel({showAddChannel}) {
           </div>
           <h5>Channels</h5>
         </div>
-        <div>
-          <AddRoundedIcon />
+        <div onClick={() => setAddChannel(!addChannel)}>
+          {!addChannel ? <AddRoundedIcon /> : <RemoveRoundedIcon/>}
         </div>
       </div>
       <div className="channel--list">
@@ -44,7 +50,7 @@ function SidebarItemChannel({showAddChannel}) {
         )}
         <div className="add--channel" onClick={()=>{setAddChannel(!addChannel)}}>
           <div>
-            <AddRoundedIcon />
+            {!addChannel ? <AddRoundedIcon /> : <RemoveRoundedIcon/>}
           </div>
           <h5>Add a channel</h5>
           </div>

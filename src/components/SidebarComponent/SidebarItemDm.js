@@ -6,15 +6,21 @@ import "./SidebarItemDm.css";
 import SidebarItemDmList from "./SidebarItemDmList";
 function SidebarItemDm() {
   const [openDmList, setOpenDmList] = useState(false);
+
+
+  const toggleDmList = (e) => {
+    e.stopPropagation();
+    setOpenDmList(!openDmList);
+  }
+
+
+
   return (
     <div className="sidebaritemdm">
-      <div className="show--dm--on--click">
+      <div className="show--dm--on--click"  onClick={(e) => toggleDmList(e)}>
         <div>
           <div
             className="dm--list--toggler"
-            onClick={() => {
-              setOpenDmList(!openDmList);
-            }}
           >
             {openDmList ? (
               <ArrowDropDownRoundedIcon />
@@ -25,7 +31,7 @@ function SidebarItemDm() {
           <h5>Direct messages</h5>
         </div>
         <div className="sidebaritem--plus">
-          <AddRoundedIcon />
+          {/* <AddRoundedIcon /> */}
         </div>
       </div>
       {openDmList && (

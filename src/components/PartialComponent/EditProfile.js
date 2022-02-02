@@ -3,15 +3,24 @@ import "./EditProfile.css";
 import CloseOutlinedIcon from "@material-ui/icons/CloseOutlined";
 import AccountBoxRoundedIcon from "@material-ui/icons/AccountBoxRounded";
 
-function EditProfile({ closeEdit }) {
+function EditProfile({ closeEdit, showEditProfile, setShowEditProfile }) {
   const [fullName, setFullName] = useState("Lorem Brian");
   const [displayName, setDisplayName] = useState("Lorem Brian");
   const [ocupation, setOcupation] = useState("Data Storytelling");
   const [timeZone, setTimeZone] = useState("UTC1");
   const [phoneNumber, setPhoneNumber] = useState("0190191029");
 
+  const closeEditProfile = (e) => {
+    if(e.target.classList.contains('edit--profile--container')) setShowEditProfile(false)
+  }
+
+  const closeModal = (e) => {
+    e.preventDefault()
+    setShowEditProfile(false)
+  }
+
   return (
-    <div className="edit--profile--container">
+    <div className="edit--profile--container" onClick={(e) => closeEditProfile(e)}>
       <div className="edit--profile--content">
         <div className="edit--profile--header">
           <h1>Edit your Profile</h1>
@@ -25,7 +34,7 @@ function EditProfile({ closeEdit }) {
               <div className="edit--profile--body--left">
                 <div>
                   <label>Full name</label>
-                  <input type="text" value={fullName} />
+                  <input type="text" value={fullName} onChange={(e) => setFullName(e.target.value)}/>
                 </div>
                 <div>
                   <label>Display name</label>
@@ -70,7 +79,7 @@ function EditProfile({ closeEdit }) {
             </div>
           </div>
           <div className="btns">
-            <button>Cancel</button>
+            <button onClick={closeModal}>Cancel</button>
             <button type="submit">Save Changes</button>
           </div>
         </form>

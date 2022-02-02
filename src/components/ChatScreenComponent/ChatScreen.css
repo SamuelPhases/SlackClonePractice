@@ -55,13 +55,13 @@
   /* background-color: #127; */
   position: fixed;
   right: 2.5%;
-  bottom: 3%;
+  bottom: 5%;
   transition: all 0.3s ease;
 }
 
 .chat--resize .chatscreen--input--edit--right {
   /* background-color: #281; */
-  bottom: 7%;
+  bottom: 9%;
 }
 
 .chatscreen--input > textarea {

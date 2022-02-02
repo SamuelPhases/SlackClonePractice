@@ -8,9 +8,13 @@ function SearchHelp({setHelpSearch}) {
   const [helpQA, setHelpQA] = useState(false)
   const [wNew,setWNew]=useState(false)
 
+  const closeSearchContainer = (e) => {
+    if(e.target.classList.contains('search--help--container')) setHelpSearch(false)
+  }
+
   return (
   <>
-    <div className="search--help--container">
+    <div className="search--help--container" onClick={(e) => closeSearchContainer(e)}>
       <div className="search--help">
           <p onClick={() => {setHelpQA(true)}}>Get help</p>
         <div>

@@ -9,17 +9,19 @@ import Preferences from "../PartialComponent/Preferences";
 // M
 function Sidebar({showAddChanel}) {
   const [about, setAbout] = useState(false);
-  const [showPeference, setShowPreference] = useState(false);
+  const [showPreference, setShowPreference] = useState(false);
 
   return (
     <>
       {about && (
         <About
-          showPeference={showPeference}
+          showPreference={showPreference}
           setShowPreference={setShowPreference}
+          about={about}
+          setAbout={setAbout}
         />
       )}
-      {showPeference && (
+      {showPreference && (
         <Preferences
           setShowPreference={setShowPreference}
           // setShowViewProfile={setShowViewProfile}

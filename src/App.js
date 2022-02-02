@@ -22,28 +22,20 @@ function App() {
         <Header />
         <div className="app--body">
           <Sidebar/>
-            <Switch>
-            <Route path="/chatscreen">
+          <Switch>
+            <Route path="/chat-screen/:id">
               <ChatScreen />
             </Route>
-          </Switch>
-          <Switch>
             <Route path="/reactions">
               <Reactions />
             </Route>
-          </Switch>
-          <Switch>
             <Route path="/threads">
               <Threads />
             </Route>
-          </Switch>
-          <Switch>
-            <Route path="/saveditems">
+            <Route path="/saved-items">
               <SavedItems />
             </Route>
-          </Switch>
-          <Switch>
-            <Route path="/alldms">
+            <Route path="/all-dms">
               <AllDms />
             </Route>
           </Switch>

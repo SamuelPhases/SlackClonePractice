@@ -10,8 +10,16 @@ function Help({setHelpQA,setHelpSearch}) {
     const  [qaOne,setQAOne]=useState(false)
     const  [qaTwo,setQATwo]=useState(false)
     const  [qaThree,setQAThree]=useState(false)
+
+    const closeHelpBox = (e) => {
+        if(e.target.classList.contains('help--container')) {
+            setHelpQA(false) 
+            setHelpSearch(false)
+        }
+    }
+
     return (
-        <div className='help--container'>
+        <div className='help--container' onClick={(e) => closeHelpBox(e)}>
             <div className='help--content'>
                 <div className='help--content--header'>
                     <h2>help</h2>

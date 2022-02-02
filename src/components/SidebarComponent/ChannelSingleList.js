@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ChannelSingleList.css";
 
 function ChannelSingleList() {
   return (
-    <div className="channel--single--list">
+    <Link to='/chat-screen/1' className="channel--single--list">
       <div>
         <h2>#</h2>
         <h5>certification_phase</h5>
@@ -11,7 +12,7 @@ function ChannelSingleList() {
       <div className="count">
         <p>1</p>
       </div>
-    </div>
+    </Link>
   );
 }
 

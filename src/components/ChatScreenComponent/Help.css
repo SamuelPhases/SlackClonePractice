@@ -98,7 +98,7 @@
   /* background-color: #827; */
   /* overflow: scroll; */
   overflow: auto;
-  height: 320px;
+  height: 350px;
 }
 
 .help--qa {
@@ -120,8 +120,6 @@
 .help--qa--header > h4 {
   font-size: 1.05rem;
   font-weight: 500;
-  color: #31b9db;
-  text-decoration: underline;
 }
 
 .help--qa--header > .MuiSvgIcon-root {
@@ -131,9 +129,9 @@
 }
 
 .help--qa--body {
-  background-color: #000;
+  /* background-color: #000; */
   /* margin-top: 0.5em; */
-  color: #31b9db;
+  color: #aaa;
   /* margin-bottom: 0.5em; */
   padding: 0.5em;
   animation: bodyAnim 0.3s linear forwards;
@@ -163,7 +161,7 @@
 }
 
 .help--qa--header:hover {
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 .help--qa--header:hover.help--qa--header > h4 {

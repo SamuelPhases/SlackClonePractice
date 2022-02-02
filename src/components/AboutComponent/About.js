@@ -2,9 +2,14 @@ import React from "react";
 import "./About.css";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
-function About({ setAbout, setShowAdmin }) {
+function About({ setAbout, setShowAdmin, showPreference, setShowPreference, about }) {
+
+  const closeAbout = (e) => {
+    if(e.target.classList.contains('about--container')) setAbout(false)
+  }
+
   return (
-    <div className="about--container">
+    <div className="about--container" onClick={(e)=>closeAbout(e)}>
       <div className="about--content">
         <div className="about--contentHeader">
           <div className="about--contentLogo"></div>

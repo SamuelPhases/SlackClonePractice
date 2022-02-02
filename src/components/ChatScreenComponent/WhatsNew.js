@@ -4,8 +4,18 @@ import CloseIcon from '@material-ui/icons/Close';
 
 
 function WhatsNew({setWNew,setHelpSearch}) {
+
+
+
+    const closeWhatsNewContainer = (e) => {
+        if(e.target.classList.contains('whatsnew--container')) {
+            setHelpSearch(false)
+            setWNew(false)
+        }
+    }
+
     return (
-        <div className='whatsnew--container'>
+        <div className='whatsnew--container' onClick={(e) => closeWhatsNewContainer(e)}>
             <div className='whatsnew--content'>
                 <div className='whatsnew--content--container'>
                     <div className='whatsnew--content--container--header'>

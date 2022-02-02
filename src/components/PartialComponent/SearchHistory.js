@@ -1,9 +1,15 @@
 import React from "react";
 import "./SearchHistory.css";
 
-function SearchHistory() {
+function SearchHistory({setSearchHistory}) {
+
+  const closeSearchHistoryContainer = (e) => {
+    if(e.target.classList.contains('search--historyContainer')) setSearchHistory(false)
+  }  
+
+
   return (
-    <div className="search--historyContainer">
+    <div className="search--historyContainer" onClick={(e) => closeSearchHistoryContainer(e)}>
       <div className="search--historyContent">
         <p>Recent</p>
         <div className="search--historyList">
